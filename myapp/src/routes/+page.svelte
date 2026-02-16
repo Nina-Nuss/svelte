@@ -1,7 +1,10 @@
 <script>
     import { onMount } from "svelte";
     import { supabase } from "$lib/supabaseClient";
-    export let data;
+    // export let data;
+
+    let { data } = $props();
+    console.log("Supabase data:", data);
 </script>
 
 <h1>Welcome to SvelteKit</h1>
@@ -12,7 +15,7 @@
 
 <h2>Supabase Daten:</h2>
 <ul>
-    {#each supabase.items as item}
+    {#each  as qitem}
         <li>{item.name}</li>
     {/each}
 </ul>
