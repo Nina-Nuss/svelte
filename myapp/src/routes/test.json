@@ -1,0 +1,24 @@
+{
+    "personen": [
+                {
+            "id": 1,
+            "name": "Apfel"
+        },
+        {
+            "id": 2,
+            "name": "Banane"
+        },
+        {
+            "id": 3,
+            "name": "Kirsche"
+        },
+        {
+            "id": 4,
+            "name": "Dattel"
+        },
+        {
+            "id": 5,
+            "name": "Erdbeere"
+        }
+    ]
+}
