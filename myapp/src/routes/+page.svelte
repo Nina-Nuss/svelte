@@ -1,4 +1,6 @@
 <script>
+    import { onMount } from "svelte";
+    import { supabase } from "$lib/supabaseClient";
     export let data;
 </script>
 
@@ -10,7 +12,7 @@
 
 <h2>Supabase Daten:</h2>
 <ul>
-    {#each data.items as item}
+    {#each supabase.items as item}
         <li>{item.name}</li>
     {/each}
 </ul>
